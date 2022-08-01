@@ -1,0 +1,264 @@
+header {
+    // position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    //background-color: rgba(0, 0, 0, 0.5);;
+    &.sticky-header.active {
+      height: 100vh;
+      background-color: #1A1C25;
+    }
+    &.sticky-header {
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      nav {
+        &.navbar {
+          padding: 10px 0;
+          .navbar-toggler {
+            top: 20px
+          }
+          .select {
+            top: 13px;
+          }
+        }
+      }
+    }
+    nav {
+        &.navbar {
+            margin: 0 auto;
+            padding: 42px 0;
+
+            .navbar-collapse {
+                justify-content: center;
+                li {
+                    margin: 0 25px;
+                    padding: 10px 10px;
+                    @media (max-width: 1200px) {
+                      padding: 0;
+                      margin: 0 10px;
+                    }
+                    @media (max-width: 992px) {
+                        text-align: center;
+                        padding: 10px 0;
+                        border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
+                        border-top: 0.8px solid rgba(255, 255, 255, 0.1);
+                        &:first-child {
+                          border-top: none;
+                        }
+                        &.active a{
+                          border: none !important;
+                          color: #F41616 !important;
+                        }
+                        a:hover {
+                          color: #F41616 !important;
+                          border-bottom: none !important;
+                        }
+                    }
+                    &.active a{
+                      border-bottom: 2px solid #F41616;
+                    }
+                    a:hover {
+                      border-bottom: 2px solid #F41616;
+                    }
+                    .nav-link {
+                      font-family: 'Raleway', sans-serif;
+                      font-weight: bold;
+                      font-size: 16px;
+                      letter-spacing: 1px;
+                      color: #ffffff;
+                      padding: 10px 0;
+                    }
+                }
+            }
+            .navbar-toggler {
+                border: none;
+                outline: none;
+                border-top: 2px solid #ffffff;
+                border-radius: 0;
+                width: 25px;
+                padding: 0;
+                transition: 0.3s;
+                top: 60px;
+                right: 15px;
+                position: absolute;
+                &.btn-close {
+                   border: none;
+                }
+                .mb-ic-open {
+                  height: 2px;
+                  width: 25px;
+                  background: #fff;
+                  border-radius: 3px;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+                  position: relative;
+                  opacity: 1;
+                  &:before {
+                    content: "";
+                    background: #fff;
+                    display: block;
+                    height: 2px;
+                    width: 20px;
+                    top: -7px;
+                    position: absolute;
+                    right: 0;
+                    border-radius: 3px;
+                    -webkit-transition: all .3s ease;
+                    transition: all .3s ease;
+                  }
+                  &:after {
+                    content: "";
+                    background: #fff;
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 3px;
+                    right: 0;
+                    position: absolute;
+                    bottom: -7px;
+                    transform: none;
+                    -webkit-transition: all .3s ease;
+                    transition: all .3s ease;
+                  }
+                }
+                .mb-ic-close {
+                  height: 2px;
+                  width: 25px;
+                  background: none;
+                  border-radius: 3px;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+                  position: relative;
+                  opacity: 1;
+                  &:before {
+                    content: "";
+                    width: 27px;
+                    top: -2px;
+                    transform: rotate(-45deg);
+                    background: #fff;
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    right: 0;
+                    border-radius: 3px;
+                    -webkit-transition: all .3s ease;
+                    transition: all .3s ease;
+                  }
+                  &:after {
+                    content: "";
+                    background: #fff;
+                    display: block;
+                    height: 2px;
+                    border-radius: 3px;
+                    right: 0;
+                    position: absolute;
+                    width: 27px;
+                    bottom: 2px;
+                    transform: rotate(45deg);
+                  }
+                }
+            }
+            .select {
+              position: absolute;
+              right: 0;
+              max-width: 130px;
+              height: 48px;
+              &.top-pc {
+                 top: 17px;
+              }
+              ul li {
+                cursor: pointer;
+              }
+              ul li:before {
+                cursor: pointer;
+              }
+              ul li.option {
+                box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+                -webkit-box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+                -moz-box-shadow: 0px 1px 0 #DEDEDE, 0px -1px 0 #DEDEDE;
+                z-index: 1;
+                display: none;
+                list-style: none;
+                color: #ffffff;
+                width: 130px;
+                height: 48px;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 100px;
+                padding: 10px 20px;
+                img {
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                }
+              }
+              ul li:first-child {
+                display: block;
+              }
+              ul li:before {
+                content: '';
+                position: absolute;
+                top: 47%;
+                right: -15px;
+                transform: translateY(-50%);
+                background: url("/assets/images/desktop/icon/arrow.svg") no-repeat left top;
+                width: 12px;
+                height: 10px;
+              }
+              @media (max-width: 991px)  {
+                right: 70px;
+                top: 17px;
+                ul {
+                  padding: 0;
+                }
+                ul li:before {
+                  right: 15px;
+                  top: 37%;
+                }
+                ul li.option {
+                  width: 125px;
+                  height: 37px;
+                  border: 1px solid #FFFFFF;
+                  box-sizing: border-box;
+                  border-radius: 100px;
+                  padding: 5px 10px;
+                }
+              }
+            }
+            .select-left {
+                left: 15px;
+            }
+            @media (min-width: 768px) {
+              max-width: 100%;
+            }
+            @media (min-width: 992px) {
+              max-width: 960px;
+            }
+            @media (min-width: 1200px) {
+              max-width: 1140px;
+            }
+            @media (min-width: 1450px) {
+              max-width: 1360px;
+            }
+            @media (max-width: 992px) {
+              padding: 15px 0;
+              .navbar-brand {
+                margin-left: 15px;
+                img{
+                  max-width: 90px;
+                }
+              }
+              .navbar-toggler {
+                top: 24px
+              }
+            }
+        }
+    }
+}
+.hide {
+  display: none;
+}
+
+

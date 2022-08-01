@@ -1,0 +1,58 @@
+.banner {
+    position: relative;
+    .img-banner {
+        width: 100%;
+    }
+    .img-title {
+      position: absolute;
+      max-width: 587px;
+      //height: 226px;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+    }
+    .scroll {
+      position: absolute;
+      bottom: 25%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #ffffff;
+      span {
+        background: url("/assets/images/desktop/banner/arrow.png") no-repeat center bottom;
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-bottom: 45px;
+        cursor: pointer;
+        @media (max-width: 991px)  {
+          background: url("/assets/images/desktop/banner/arrow-mb.png") no-repeat center bottom;
+          font-size: 12px;
+          padding-bottom: 28px;
+        }
+      }
+    }
+    .mb-banner, .mb-title {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      .pc-banner {
+          display: none;
+      }
+      .mb-banner {
+          display: block;
+          //margin-top: 146px;
+      }
+      .pc-title {
+        display: none;
+      }
+      .mb-title {
+        display: block;
+        top: 20%;
+        max-width: 350px;
+      }
+      .mb-scroll {
+        bottom: 35%;
+      }
+    }
+}

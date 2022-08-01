@@ -1,0 +1,53 @@
+//=======================================
+// Do not change the order of those files
+//=======================================
+
+// ABSTRACT
+@import "static/assets/scss/abstracts/variables";
+@import "static/assets/scss/abstracts/mixins";
+@import "static/assets/scss/abstracts/functions";
+@import "static/assets/scss/abstracts/helpers";
+
+// BASE
+@import "static/assets/scss/base/reset";
+@import "static/assets/scss/base/global";
+@import "static/assets/scss/base/typography";
+@import "static/assets/scss/base/shame";
+
+// LAYOUT
+@import "static/assets/scss/layout/grid";
+@import "static/assets/scss/layout/navigation";
+@import "static/assets/scss/layout/header";
+@import "static/assets/scss/layout/sidebar";
+@import "static/assets/scss/layout/footer";
+
+// COMPONENTS
+@import "static/assets/scss/components/alert";
+@import "static/assets/scss/components/banner";
+@import "static/assets/scss/components/buttons";
+@import "static/assets/scss/components/card";
+@import "static/assets/scss/components/forms";
+@import "static/assets/scss/components/icons";
+@import "static/assets/scss/components/menu";
+@import "static/assets/scss/components/modal";
+@import "static/assets/scss/components/progress";
+@import "static/assets/scss/components/table";
+
+// PAGES
+@import "static/assets/scss/pages/home";
+
+// THEMES
+@import "static/assets/scss/themes/theme";
+
+// MENU
+@import "header/header";
+
+// BANNER
+@import "banner/banner";
+
+// PRODUCT
+@import "product/product";
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600&display=swap');

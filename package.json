@@ -1,0 +1,51 @@
+{
+  "name": "bplay",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "cs-watch": "node-sass scss/main.scss css/style.css --watch",
+    "cs-compile": "node-sass scss/main.scss css/style.comp.css",
+    "cs-prefix": "postcss css/style.comp.css --use autoprefixer -b 'last 4 versions' -o css/style.prefix.css",
+    "cs-compress": "node-sass css/style.prefix.css css/style.mini.css --output-style compressed",
+    "cs-build": "npm-run-all cs-compile cs-prefix cs-compress"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.5.0",
+    "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
+    "create-scss": "^2.5.4",
+    "jquery": "^3.5.1",
+    "nuxt": "^2.14.0",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3"
+  },
+  "description": "## Build Setup",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/nguyentruong_hiko/bplay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/nguyentruong_hiko/bplay/issues"
+  },
+  "homepage": "https://gitlab.com/nguyentruong_hiko/bplay#readme"
+}

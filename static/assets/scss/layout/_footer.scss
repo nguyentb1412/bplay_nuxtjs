@@ -1,0 +1,135 @@
+//============
+// Footer
+//============
+footer {
+  p {
+    color: #ffffff;
+  }
+  .footer-logo {
+    width: 241px;
+    height: 82px;
+  }
+  h3 {
+    margin-bottom: 29px;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  .icon-location {
+    width: 21px;
+    height: 30px;
+    margin-right: 31px;
+  }
+  .icon-email {
+    width: 30px;
+    height: 21px;
+    margin-right: 23px;
+  }
+  ul {
+    white-space: nowrap;
+    li {
+      display: inline;
+    }
+    .sab-img {
+      width: 58px;
+      height: 35px;
+      margin-left: 20px;
+    }
+    .curacao-img {
+      width: 38px;
+      height: 45px;
+      margin-left: 53px;
+    }
+    .itech-img {
+      width: 44px;
+      height: 45px;
+      margin-left: 53px;
+    }
+  }
+  .license-img {
+    width: 246px;
+    height: 48px;
+  }
+  .license-text {
+    text-align: right;
+    white-space: nowrap;
+    color: #ffffff;
+    opacity: 0.7;
+    transform: rotate(0.1deg);
+    font-size: 14px;
+    line-height: 28px;
+  }
+  hr {
+    border: 0.5px solid #424657;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .footer-logo {
+      width: 118px;
+      height: 40px;
+      margin-bottom: 47px;
+    }
+    h3 {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 24px;
+    }
+    .icon-location {
+      width: 15px;
+      height: 21px;
+      margin-right: 16px;
+    }
+    .icon-email {
+      width: 18px;
+      height: 12px;
+      margin-right: 15px;
+    }
+    .flex-row-reverse {
+      flex-direction: unset !important;
+      margin-left: -60px;
+    }
+    ul {
+      white-space: nowrap;
+      li {
+        display: inline;
+      }
+      .sab-img {
+        width: 58px;
+        height: 35px;
+        margin-left: 0px;
+      }
+      .curacao-img {
+        width: 38px;
+        height: 45px;
+        margin-left: 53px;
+      }
+      .itech-img {
+        width: 44px;
+        height: 45px;
+        margin-left: 53px;
+      }
+    }
+    .license-img {
+      width: 246px;
+      height: 48px;
+      margin-left: 40px;
+    }
+    .license-text {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 23px;
+      padding-top: 7px;
+      border-top: 1px solid #424657;
+    }
+    hr {
+      margin-bottom: 33px;
+    }
+    .mga-container {
+      text-align: center;
+    }
+  }
+}
